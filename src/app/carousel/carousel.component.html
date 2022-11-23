@@ -1,0 +1,36 @@
+<div class="testimonials" *ngIf="testimonials && testimonials.length > 0">
+  <div
+    class="testimonial fade"
+    *ngFor="let quote of testimonials | filterPrice; let i = index"
+    [ngClass]="{ active: selectedIndex === i }"
+  >
+    <div class="testimonial__banner">
+      <img src="../assets/quote-icon.svg" alt="" />
+
+      <p>{{ quote.description }}</p>
+      <h2><span></span>{{ quote.name }}</h2>
+    </div>
+    <div *ngIf="indicators" class="carousel__dots">
+      <span
+        *ngFor="let dot of testimonials | filterPrice; let i = index"
+        [ngClass]="{ active: selectedIndex === i }"
+        (click)="selectTestimonial(i)"
+      ></span>
+    </div>
+
+    <div
+      [ngClass]="{ display__left: selectedIndex === 0 }"
+      *ngIf="controls"
+      class="carousel__arrow arrow-left"
+    >
+      <div (click)="onLeftClick()"></div>
+    </div>
+    <div
+      [ngClass]="{ display__right: selectedIndex === 2 }"
+      *ngIf="controls"
+      class="carousel__arrow arrow-right"
+    >
+      <div (click)="onRightClick()"></div>
+    </div>
+  </div>
+</div>

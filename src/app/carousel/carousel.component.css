@@ -1,0 +1,148 @@
+.testimonials {
+  position: relative;
+}
+
+.testimonials .testimonial {
+  display: none;
+}
+
+.testimonials .testimonial.active {
+  display: flex;
+}
+.testimonials .testimonial__banner {
+  display: flex;
+  flex-direction: column;
+}
+.testimonials .testimonial.active p {
+  color: white;
+  font-size: 1rem;
+}
+
+.testimonials .testimonial.active img {
+  width: 30px;
+  margin-bottom: 1.2rem;
+}
+.testimonials .testimonial.active .testimonial__banner h2 {
+  display: flex;
+  align-items: center;
+  align-self: flex-end;
+  color: #5e95e9;
+  font-size: 1.1rem;
+}
+
+.testimonials .testimonial.active .testimonial__banner h2 span {
+  width: 14px;
+  height: 1px;
+  background-color: #5e95e9;
+  margin-right: 0.3rem;
+}
+
+/* dots */
+
+.carousel__dots {
+  position: absolute;
+
+  bottom: -10px;
+  left: 43%;
+  display: flex;
+  justify-content: center;
+}
+
+.carousel__dots span {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: opacity 0.6s ease;
+  opacity: 0.5;
+}
+.carousel__dots span.active {
+  opacity: 1;
+}
+
+.carousel__dots span:hover {
+  opacity: 1;
+}
+
+/* fade effect */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Arrow btn*/
+
+.carousel__arrow {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 30%;
+}
+
+.carousel__arrow div {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-top: 8px solid var(--color-primary);
+  border-left: 8px solid var(--color-primary);
+  top: 35px;
+  left: 27.5px;
+}
+
+.carousel__arrow.display__left {
+  display: none;
+}
+.carousel__arrow.display__right {
+  display: none;
+}
+
+.carousel__arrow.arrow-left {
+  left: -20%;
+}
+.carousel__arrow.arrow-left div {
+  transform: rotate(-45deg);
+  cursor: pointer;
+}
+
+.carousel__arrow.arrow-right {
+  right: -20%;
+}
+
+.carousel__arrow.arrow-right div {
+  transform: rotate(135deg);
+  cursor: pointer;
+}
+
+/* Responsive */
+@media only screen and (min-width: 500px) and (max-width: 590px) {
+  .testimonials {
+    width: 320px;
+    margin-left: 4rem;
+  }
+}
+@media only screen and (min-width: 445px) and (max-width: 500px) {
+  .testimonials {
+    width: 320px;
+    margin-left: 4rem;
+  }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 445px) {
+  .testimonials {
+    width: 280px;
+    margin-left: 5rem;
+  }
+}

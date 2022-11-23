@@ -1,1 +1,49 @@
-/* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+:root {
+  --color-primary: #c445f4;
+  --color-secondary: #3899fa;
+  --color-variant: #639efa;
+  --color-bg: #292929;
+}
+.container {
+  width: 1366px;
+  margin: 0 auto;
+}
+
+body {
+  background: var(--color-bg);
+
+  background-repeat: no-repeat;
+  background-position: bottom 120% center;
+
+  color: var(--color-primary);
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+}
+
+@media only screen and (min-width: 1105px) and (max-width: 1330px) {
+  .container {
+    width: 1024px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1104px) {
+  .container {
+    width: 860px;
+  }
+}

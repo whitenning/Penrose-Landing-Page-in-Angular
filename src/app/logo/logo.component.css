@@ -1,0 +1,36 @@
+.logo .penrose {
+  height: 96px;
+  display: flex;
+  align-items: center;
+  color: var(--color-primary);
+}
+
+.logo h1 {
+  font-size: 64px;
+  font-weight: 600;
+  margin-bottom: 15px;
+  margin-left: 13px;
+}
+.logo .penrose img {
+  width: 83px;
+  height: 73.5px;
+  margin: 11px 5px;
+}
+
+@media only screen and (min-width: 445px) and (max-width: 500px) {
+  .logo h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+}
+
+@media only screen and (min-width: 390px) and (max-width: 445px) {
+  .logo h1 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-left: 0;
+  }
+}
