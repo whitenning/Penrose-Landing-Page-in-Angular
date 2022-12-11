@@ -28,8 +28,6 @@ import { FilterPricePipe } from './filter-price.pipe';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  exports: [
-    CarouselComponent
-  ],
+  exports: [CarouselComponent],
 })
 export class AppModule {}
