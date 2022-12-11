@@ -2,12 +2,12 @@
   <app-navbar> </app-navbar>
   <div class="landing__wrapper container">
     <div class="background">
-      <img src="../assets/Triangle (4).svg" class="penrose" alt="" />
-      <img src="../assets/Shadow.svg" class="shadow" alt="" />
-      <img src="../assets/img/Model@2x/Model@2x.png" class="model" alt="" />
+      <img src="assets/Triangle (4).svg" class="penrose" alt="" />
+      <img src="assets/Shadow.svg" class="shadow" alt="" />
+      <img src="assets/img/Model@2x/Model@2x.png" class="model" alt="" />
     </div>
     <div class="header">
-      <img src="../assets/Title.svg" alt="" class="text" />
+      <img src="assets/Title.svg" alt="" class="text" />
       <div class="video" [ngClass]="{ active: video === true }">
         <button (click)="showVideo()">
           <mat-icon class="play__icon">play_arrow</mat-icon>
@@ -21,21 +21,12 @@
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
-        <img src="../assets/Triangle.svg" alt="" />
-        <img src="../assets/Shadow (1).svg" alt="" class="cover__shadow" />
+        <img src="assets/Triangle.svg" alt="" />
+        <img src="assets/Shadow (1).svg" alt="" class="cover__shadow" />
       </div>
     </div>
     <div class="testimonials">
       <app-carousel [testimonials]="quotes"></app-carousel>
-      <!-- <div class="testimonial" *ngFor="let quote of quotes">
-        <div class="testimonial__banner">
-          <img src="../assets/quote-icon.svg" alt="" />
-
-          <p>{{ quote.description }}</p>
-          <h2><span></span>{{ quote.name }}</h2>
-        </div>
-        <div class="arrow"></div>
-      </div> -->
     </div>
   </div>
 </div>
